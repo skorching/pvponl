@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pvp.onl | Minigames Server</title>
+
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --text: #ffffff;
+            --card: #1a1a1a;
+            --accent: #d90000;
+            --highlight: #2ecc71;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        }
+
+        /* Scrolling Banner */
+        .banner {
+            background: var(--accent);
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner span {
+            position: absolute;
+            animation: scroll-left 12s linear infinite;
+            width: 100%;
+        }
+        @keyframes scroll-left {
+            0% { left: 100%; }
+            100% { left: -100%; }
+        }
+
+        /* Hero Layout */
+        .hero {
+            text-align: center;
+            padding: 170px 20px 120px 20px;
+            background: linear-gradient(135deg, #0c0c0c, #171717);
+        }
+        .hero h1 {
+            font-size: 70px;
+            font-weight: 900;
+            margin: 0 0 10px 0;
+        }
+        .hero p {
+            font-size: 22px;
+            margin: 0 0 25px 0;
+        }
+        .ip-box {
+            font-size: 26px;
+            margin-bottom: 25px;
+            padding: 12px 20px;
+            background: #00000070;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* Discord Button Under Title */
+        .discord-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            font-size: 20px;
+            background: #5865F2;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .discord-btn:hover {
+            background: #4752C4;
+        }
+
+        /* Sections */
+        .section {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 20px;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 15px;
+            font-size: 20px;
+            line-height: 1.7em;
+            box-shadow: 0 0 20px #00000040;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #000;
+            color: #ccc;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>PVP.ONL</h1>
+        <p>The Ultimate Minecraft Minigame Server</p>
+
+        <div class="ip-box">
+            IP: <strong>pvp.onl</strong>
+        </div>
+
+        <!-- Support/Discord button placed under the server name -->
+        <br>
+        <a class="discord-btn" href="https://discord.gg/https://discord.gg/j9ZuYSPzh9" target="_blank">
+            Join Discord / Support
+        </a>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+        <h2>About the Server</h2>
+        <div class="card">
+            <strong>pvp.onl</strong> is a fast-paced Minecraft minigame server created by 
+            <strong>Skorch</strong>. Built for nonstop action, competitive PvP, and 
+            unique custom gamemodes — all designed for players who love skill-based gameplay.
+        </div>
+    </div>
+
+    <!-- Minigames -->
+    <div class="section">
+        <h2>Minigames</h2>
+        <div class="card">
+            🎯 <strong>Bow PvP</strong><br>
+            💣 <strong>TNT Run</strong><br>
+            ❄️ <strong>Spleef</strong><br>
+            🎲 <strong>Randomized PvP</strong><br>
+            ⭐ <strong>...and more!</strong>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 pvp.onl — Created by Skorch
+    </footer>
+
+</body>
+</html>
